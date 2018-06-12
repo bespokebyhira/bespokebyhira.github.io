@@ -84,14 +84,16 @@
 				<div class="swiper-container swiper-parent">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide dark" style="background-image: url('images/page/slider-1.jpg');">
-							<div class="container clearfix">
-								<div class="slider-caption slider-caption-center">
-									<!--h2 data-caption-animate="fadeInUp">Bespoke Weddings</h2-->
-									<p class="d-none d-sm-block center uppercase t300 ls3 font-body" data-caption-animate="fadeInUp" data-caption-delay="200">We help plan one of the best days of your life.</p>
-								</div>
+							<div style="background-color: rgba(10, 29, 40, 0.6); position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+								<div class="container clearfix"">
+									<div class="slider-caption slider-caption-center">
+										<!--h2 data-caption-animate="fadeInUp">Bespoke Weddings</h2-->
+										<p class="d-none d-sm-block center uppercase t300 ls3 font-body" data-caption-animate="fadeInUp" data-caption-delay="200">We help plan one of the best days of your life.</p>
+									</div>
+							</div>
 							</div>
 						</div>
-						<div class="swiper-slide dark" style="background-image: url('images/page/slider-2.jpg');">
+						<!--div class="swiper-slide dark" style="background-image: url('images/page/slider-2.jpg');">
 							<div class="container clearfix">
 								<div class="slider-caption slider-caption-center">
 									<h2 data-caption-animate="fadeInUp"> /bĭ-spōk′/ </h2>
@@ -117,7 +119,7 @@
 						</div>
 					</div>
 					<div class="slider-arrow-left"><i class="icon-angle-left"></i></div>
-					<div class="slider-arrow-right"><i class="icon-angle-right"></i></div>
+					<div class="slider-arrow-right"><i class="icon-angle-right"></i></div-->
 				</div>
 
 				<a href="#" data-scrollto="#section-about" data-easing="easeInOutExpo" data-speed="1250" data-offset="65" class="one-page-arrow dark"><i class="icon-angle-down infinite animated fadeInDown"></i></a>
@@ -296,8 +298,9 @@
 								<div class="team">
 									<div class="team-image">
 										<img src="images/team/hira.jpg" alt="Hira Niaz">
-										<div class="team-overlay">
-											<div class="team-social-icons">
+										<!-- ===== FIX THIS PROBLEM - CANNOT DELETE OVERLAY HOVER ==== --> 
+										<div class="team-overlay" style="background-color: rgba(0, 0, 0, 0);">
+											<!--div class="team-social-icons">
 												<a href="#" class="social-icon si-borderless si-small si-facebook" title="Facebook">
 													<i class="icon-facebook"></i>
 													<i class="icon-facebook"></i>
@@ -310,7 +313,7 @@
 													<i class="icon-github"></i>
 													<i class="icon-github"></i>
 												</a>
-											</div>
+											</div-->
 										</div>
 									</div>
 									<div class="team-desc team-desc-bg">
@@ -333,8 +336,9 @@
 								<div class="team">
 									<div class="team-image">
 										<img src="images/team/zaid.jpg" alt="Zaid Haque">
-										<div class="team-overlay">
-											<div class="team-social-icons">
+										<!-- ===== FIX THIS PROBLEM - CANNOT DELETE OVERLAY HOVER ==== --> 
+										<div class="team-overlay" style="background-color: rgba(0, 0, 0, 0);">
+											<!--div class="team-social-icons">
 												<a href="https://twitter.com/@zaidhaque" class="social-icon si-borderless si-small si-twitter" title="Twitter">
 													<i class="icon-twitter"></i>
 													<i class="icon-twitter"></i>
@@ -347,7 +351,7 @@
 													<i class="icon-flickr"></i>
 													<i class="icon-flickr"></i>
 												</a>
-											</div>
+											</div-->
 										</div>
 									</div>
 									<div class="team-desc team-desc-bg">
@@ -509,7 +513,7 @@
 
 					<div class="section dark nomargin">
 						<div class="divcenter center" style="max-width: 900px;">
-							<h2 class="nobottommargin t300 ls1">Like Our Services? Get an <a href="#" data-scrollto="#template-contactform" data-offset="140" data-easing="easeInOutExpo" data-speed="1250" class="button button-border button-circle button-light button-large notopmargin nobottommargin" style="position: relative; top: -3px;">Instant Quote</a></h2>
+							<h2 class="nobottommargin t300 ls1">Like Our Services? <a href="#" data-scrollto="#template-contactform" data-offset="140" data-easing="easeInOutExpo" data-speed="1250" class="button button-border button-circle button-light button-large notopmargin nobottommargin" style="position: relative; top: -3px;">Get in touch</a></h2>
 						</div>
 					</div>
 
@@ -734,11 +738,11 @@
 								<div class="clear"></div>
 
 								<div class="col_full">
-									<textarea class="required sm-form-control border-form-control" id="referral" name="template-contactform-referral" rows="1" cols="30" placeholder="How did you hear about us?*"></textarea>
+									<textarea class="required sm-form-control border-form-control" id="referral" name="referral" rows="1" cols="30" placeholder="How did you hear about us?*"></textarea>
 								</div>
 
 								<div class="col_full">
-									<textarea class="required sm-form-control border-form-control" id="request" name="template-contactform-request" rows="7" cols="30" placeholder="What can we help you with?*"></textarea>
+									<textarea class="required sm-form-control border-form-control" id="message" name="message" rows="7" cols="30" placeholder="What can we help you with?*"></textarea>
 								</div>
 
 
@@ -808,6 +812,29 @@
 								</form>
 							</div-->
 
+							<div class="widget clearfix">
+								<h4>Stay Updated</h4>
+
+								<div class="center topmargin-sm">
+									<a href="https://facebook.com/bespokebyhira" class="social-icon inline-block noborder si-large si-facebook" title="Facebook">
+										<i class="icon-facebook"></i>
+										<i class="icon-facebook"></i>
+									</a>
+									<a href="https://instagram.com/bespokebyhira" class="social-icon inline-block noborder si-large si-instagram" title="Twitter">
+										<i class="icon-instagram"></i>
+										<i class="icon-instagram"></i>
+									</a>
+									<!--a href="#" class="social-icon inline-block noborder si-small si-github" title="Github">
+										<i class="icon-github"></i>
+										<i class="icon-github"></i>
+									</a-->
+									<a href="https://pinterest.com/bespokebyhira" class="social-icon inline-block noborder si-large si-pinterest" title="Pinterest">
+										<i class="icon-pinterest"></i>
+										<i class="icon-pinterest"></i>
+									</a>
+								</div>
+							</div>
+
 						</div>
 
 						<div class="col-lg-4">
@@ -815,26 +842,11 @@
 							<div class="widget clearfix">
 								<h4>Contact</h4>
 
-								<p class="lead">288 106th Ave NE<br>Bellevue, WA 98004</p>
+								<p class="lead">
+									info@bespokebyhira.com<br><br>
+									288 106th Ave NE<br>Bellevue, WA 98004
+								</p>
 
-								<div class="center topmargin-sm">
-									<a href="#" class="social-icon inline-block noborder si-small si-facebook" title="Facebook">
-										<i class="icon-facebook"></i>
-										<i class="icon-facebook"></i>
-									</a>
-									<a href="#" class="social-icon inline-block noborder si-small si-twitter" title="Twitter">
-										<i class="icon-twitter"></i>
-										<i class="icon-twitter"></i>
-									</a>
-									<a href="#" class="social-icon inline-block noborder si-small si-github" title="Github">
-										<i class="icon-github"></i>
-										<i class="icon-github"></i>
-									</a>
-									<a href="#" class="social-icon inline-block noborder si-small si-pinterest" title="Pinterest">
-										<i class="icon-pinterest"></i>
-										<i class="icon-pinterest"></i>
-									</a>
-								</div>
 							</div>
 
 						</div>
